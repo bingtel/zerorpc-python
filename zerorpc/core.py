@@ -282,6 +282,8 @@ class Server(SocketBase, ServerBase):
 
     def __init__(self, methods=None, name=None, context=None, pool_size=None,
             heartbeat=5):
+        import pdb
+        pdb.set_trace()
         SocketBase.__init__(self, zmq.ROUTER, context)
         if methods is None:
             methods = self
